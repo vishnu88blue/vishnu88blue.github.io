@@ -1,3 +1,5 @@
+/* Navigation Bar styling starts here */
+
 .nav ul {
     list-style-type: none;
     margin: 0;
@@ -5,28 +7,35 @@
     overflow: hidden;
     background-color: #333;
     border-radius: 20px;
-    height: 10em;
+    height: 5em;
+    
     
   }
   header {
-    position: fixed; /* Set the navbar to fixed position */
+     /* Set the navbar to fixed position */
+     margin-left: auto;
+     margin-right: auto;
     top: 0; /* Position the navbar at the top of the page */
-    width: 93%; /* Full width */
+     /* Full width */
+    width: 75%;
+    height: 1em;
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px;
     border-radius: 5em;
-    margin-left: 1em;
-    margin-right: 1em;
+    
+    justify-content: center;
+    
+    
   }
   
   .nav li {
-    float: left;
+    float: center;
   }
   
   .nav li a {
-    display: block;
+    
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -37,6 +46,7 @@
   }
   nav ul {
     list-style-type: none;
+    margin-top: 0px;
   }
   
   nav li {
@@ -49,7 +59,7 @@
     text-decoration: none;
   }
   
-/* styles.css */
+/* Navigation Bar styling ends here */
 
 body {
   font-family: Arial, sans-serif;
