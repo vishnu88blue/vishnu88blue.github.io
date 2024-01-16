@@ -9,18 +9,33 @@
 
     <h1>Do you like this website?</h1>
 
-    <form action="#" method="post">
+    <form action="result.html" method="get" onsubmit="return validateForm()">
         <label for="yes">Yes</label>
-        <input type="radio" id="yes" name="answer" value="yes">
+        <input type="radio" id="yes" name="answer" value="yes" required>
 
         <label for="no">No</label>
-        <input type="radio" id="no" name="answer" value="no">
+        <input type="radio" id="no" name="answer" value="no" required>
 
         <br>
 
         <input type="submit" value="Submit">
     </form>
 
+    <script>
+        function validateForm() {
+            var answerYes = document.getElementById("yes").checked;
+            var answerNo = document.getElementById("no").checked;
+
+            if (answerYes || answerNo) {
+                // Form is valid, continue with submission
+                return true;
+            } else {
+                // Display an error message and prevent form submission
+                alert("Please select an answer.");
+                return false;
+            }
+        }
+    </script>
+
 </body>
 </html>
-
